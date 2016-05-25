@@ -2,15 +2,33 @@
 <html lang="en">
     <head>
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
     </head>
     <body>
-        <div class="container-fluid">
-            <div class="row">
+
+            <div class="container">
+
+            <div class="jumbotron">
+                <h1>Challenge Full Stack</h1>
+                <p class="lead">Palíndromo é a frase ou palavra que mantém o mesmo sentido quando lida de trás pra frente.</p>
+                <p class="lead">Gostaria de testar se alguma palavra ou frase é um palíndromo?</p>
+
                 <form action="http://127.0.0.1:8080/palindromo" method="post" >
-                    <input type="text" name="frase">Digite seu palindromo
+                    <div class="input-group">
+                        <input type="text" class="form-control" name="frase" placeholder="Digite aqui a frase a ser verificada">
+                        <div class="input-group-btn">
+                            <button type="submit" class="btn btn-success">Enviar</button>
+                        </div>
+                    </div>
                 </form>
             </div>
+
+            <footer class="footer">
+                <p>&copy; 2016 Mateus V. S Veloso.</p>
+            </footer>
+
         </div>
+    
     </body>
+
 </html>

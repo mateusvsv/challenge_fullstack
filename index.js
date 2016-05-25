@@ -16,11 +16,14 @@ app.get("/", function(req, res) {
 app.post('/palindromo', function (req, res) {
     var frase = req.body.frase;
     palindromo = isPalindrome(frase);
-    if (palindromo)
+    if (palindromo){
         res.status(HttpStatus.OK);
-    else
+        res.sendFile( __dirname + "/" + "resposta.html" );
+    }
+    else{
         res.status(HttpStatus.BAD_REQUEST);
-    res.send(palindromo);
+        res.sendFile( __dirname + "/" + "erro.html" );
+    }
 });
 
 function isPalindrome(frase){
@@ -36,7 +39,7 @@ function isPalindrome(frase){
 
 function formataFrase(frase){
     frase = frase.toUpperCase();
-    frase = frase.replace(/-/g,'');
+    frase = frase.replace(/ /g,'');
     frase = removeDiacritics(frase);
     return frase;
 }
