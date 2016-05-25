@@ -18,6 +18,8 @@
   },
   "homepage": "https://github.com/mateusvsv/challenge_fullstack#readme",
   "dependencies": {
+    "body-parser": "^1.15.1",
+    "diacritics": "^1.2.3",
     "express": "^4.13.4",
     "http-status-codes": "^1.0.6"
   }
