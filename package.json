@@ -1,0 +1,24 @@
+{
+  "name": "challenge_fullstack",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mateusvsv/challenge_fullstack.git"
+  },
+  "author": "Mateus Vieira S. Veloso",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mateusvsv/challenge_fullstack/issues"
+  },
+  "homepage": "https://github.com/mateusvsv/challenge_fullstack#readme",
+  "dependencies": {
+    "express": "^4.13.4",
+    "http-status-codes": "^1.0.6"
+  }
+}
